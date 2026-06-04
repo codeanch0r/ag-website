@@ -10,7 +10,45 @@
 		.filter-btn { display: inline-block; margin: 0.3em; padding: 0.5em 1em; background: #e0e0e0; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9em; transition: all 0.3s ease; }
 		.filter-btn:hover { background: #d0d0d0; }
 		.filter-btn.active { background: #444; color: #fff; }
-		.case-study { background: #fff; padding: 1.5em; margin-bottom: 1.5em; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+		.case-study {
+			background: #fef3a8;
+			padding: 1.5em;
+			margin-bottom: 2em;
+			box-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+			position: relative;
+			transform: rotate(-1deg);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.case-study:nth-child(even) {
+			background: #d4f5a4;
+			transform: rotate(1.5deg);
+		}
+		.case-study:nth-child(3n) {
+			background: #a8e6f0;
+			transform: rotate(-0.5deg);
+		}
+		.case-study:nth-child(4n) {
+			background: #ffb3ba;
+			transform: rotate(0.8deg);
+		}
+		.case-study:hover {
+			transform: rotate(0deg) scale(1.02);
+			box-shadow: 3px 5px 12px rgba(0,0,0,0.3);
+			z-index: 10;
+		}
+		.case-study::before {
+			content: '';
+			position: absolute;
+			top: -12px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 60px;
+			height: 20px;
+			background: rgba(255,255,255,0.6);
+			box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+			border-radius: 2px;
+		}
 		.case-study.hidden { display: none; }
 		.case-tags { margin-top: 1em; }
 		.case-tag { display: inline-block; padding: 0.2em 0.6em; margin: 0.2em; background: #f0f0f0; border-radius: 3px; font-size: 0.8em; color: #666; }
@@ -63,8 +101,7 @@
 									<button class="filter-btn show-all-btn active" data-filter="all">Show All</button>
 									<button class="filter-btn" data-filter="exercise">Exercise</button>
 									<button class="filter-btn" data-filter="diet">Diet Control</button>
-									<button class="filter-btn" data-filter="mindset">Mindset</button>
-									<button class="filter-btn" data-filter="active-lifestyle">Active Lifestyle</button>
+										<button class="filter-btn" data-filter="active-lifestyle">Active Lifestyle</button>
 									<button class="filter-btn" data-filter="maintenance">Weight Maintenance</button>
 									<button class="filter-btn" data-filter="challenges">Overcoming Challenges</button>
 								</div>
