@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Weight Savers - Case Studies</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<style>
+		.filter-buttons { margin: 2em 0; text-align: center; }
+		.filter-btn { display: inline-block; margin: 0.3em; padding: 0.5em 1em; background: #e0e0e0; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9em; transition: all 0.3s ease; }
+		.filter-btn:hover { background: #d0d0d0; }
+		.filter-btn.active { background: #444; color: #fff; }
+		.case-study { background: #fff; padding: 1.5em; margin-bottom: 1.5em; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+		.case-study.hidden { display: none; }
+		.case-tags { margin-top: 1em; }
+		.case-tag { display: inline-block; padding: 0.2em 0.6em; margin: 0.2em; background: #f0f0f0; border-radius: 3px; font-size: 0.8em; color: #666; }
+		.case-tag.active-filter { background: #444; color: #fff; }
+		.show-all-btn { background: #6b8e23; color: #fff; }
+		.show-all-btn:hover { background: #5a7a1d; }
+		.case-count { text-align: center; color: #666; margin-bottom: 1em; font-style: italic; }
+		.category-section { margin: 2em 0; }
+		.category-title { font-size: 1.2em; color: #444; margin-bottom: 1em; padding-bottom: 0.5em; border-bottom: 2px solid #e0e0e0; }
+	</style>
+</head>
+<body class="is-preload left-sidebar">
+	<div id="page-wrapper">
+		<div id="header-wrapper">
+			<header id="header" class="container">
+				<div id="logo"><h1><a href="../index.html">Weight Savers</a></h1></div>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../start.html">Where to Start</a></li>
+						<li class="current">
+							<a href="../support.html">Support</a>
+							<ul>
+								<li><a href="../articles/eatwell.html">Eating Well</a></li>
+								<li><a href="../articles/recipes.html">Recipes</a></li>
+								<li><a href="../articles/stories.html">Personal Stories</a></li>
+								<li><a href="../quizzes/bmi.html">BMI Calculator</a></li>
+								<li><a href="../quizzes/work-life.html">Work / Life Calculator</a></li>
+							</ul>
+						</li>
+						<li><a href="../askjim.html">Free Trial</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+		<div id="main-wrapper">
+			<div class="container">
+				<div class="row gtr-200">
+					<div class="col-4 col-12-medium">
+						<div id="sidebar">
+							<section>
+								<p><img src="../images/RChambersBio.png" width="100px" height="100px" style="float:right; padding-right: 5px;"></p>
+								<h3>By Dr Ruth Chambers OBE</h3>
+							</section>
+							<section>
+								<h3>Filter by Category</h3>
+								<p>Click a category to filter case studies.</p>
+								<div class="filter-buttons" style="text-align: left; margin: 0;">
+									<button class="filter-btn show-all-btn active" data-filter="all">Show All</button>
+									<button class="filter-btn" data-filter="exercise">Exercise</button>
+									<button class="filter-btn" data-filter="diet">Diet Control</button>
+									<button class="filter-btn" data-filter="mindset">Mindset</button>
+									<button class="filter-btn" data-filter="active-lifestyle">Active Lifestyle</button>
+									<button class="filter-btn" data-filter="maintenance">Weight Maintenance</button>
+									<button class="filter-btn" data-filter="challenges">Overcoming Challenges</button>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="col-8 col-12-medium imp-medium">
+						<div id="content">
+							<article>
+								<h2>Case Studies</h2>
+								<p>Real stories from people who have faced weight challenges. Filter by category to find stories relevant to your situation.</p>
+								<div class="case-count" id="caseCount">Showing all case studies</div>
+
+								<div id="caseStudies">
+									<div class="category-section" data-category="thinking">
+										<div class="category-title">Thinking About It</div>
+										<div class="case-study" data-tags="challenges exercise mindset">
+											<p><strong>Alex</strong> joined a health club with his wife but struggles to prioritize exercise. He observes coworkers falling into negative cycles: obsessed about weight, strict diet/exercise, then binge, over-eat, feel guilty - a repetitive saga.</p>
+											<div class="case-tags"><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Exercise</span><span class="case-tag">Mindset</span></div>
+										</div>
+										<div class="case-study" data-tags="challenges exercise mindset diet">
+											<p><strong>Rachel</strong> lost two stones through strict calorie restriction and swimming three times a week. But once she reached her target, exercise became tedious. She sees food as a comforter, preferring curry or pizza when tired rather than salad.</p>
+											<div class="case-tags"><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Exercise</span><span class="case-tag">Mindset</span><span class="case-tag">Diet Control</span></div>
+										</div>
+										<div class="case-study" data-tags="challenges mindset diet">
+											<p><strong>Debbie</strong> uses junk food as comfort and struggles with willpower. She tried hypnotism which worked temporarily. Stress from starting a new business led her to eat twice in the evening.</p>
+											<div class="case-tags"><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Mindset</span><span class="case-tag">Diet Control</span></div>
+										</div>
+										<div class="case-study" data-tags="exercise active-lifestyle maintenance mindset diet">
+											<p><strong>Joe, aged 71</strong>, has never been fat. He's always active - golf 3x/week, gym with his brother, hill walking, occasional jogs. He eats no breakfast, has muesli/fruit for lunch, cooks healthy supper with small portions, avoids bread, eats slowly. He drinks one glass of wine daily. He thinks about healthy weight constantly and rarely breaches his pattern.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Active Lifestyle</span><span class="case-tag">Weight Maintenance</span><span class="case-tag">Mindset</span><span class="case-tag">Diet Control</span></div>
+										</div>
+									</div>
+
+									<div class="category-section" data-category="doing">
+										<div class="category-title">Doing It</div>
+										<div class="case-study" data-tags="diet challenges mindset exercise maintenance">
+											<p><strong>Janet, aged 58</strong>, works in the prison service. A blood test showed pre-diabetes, motivating her to lose weight. Her GP signed her up to the 'second nature' app. She lost 1.5 stones in 10 weeks but struggles to find time to exercise after work. She avoids 'fat jabs' after seeing friends who look 'ill and scraggy'.</p>
+											<div class="case-tags"><span class="case-tag">Diet Control</span><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Mindset</span><span class="case-tag">Exercise</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="exercise mindset active-lifestyle maintenance">
+											<p><strong>Tracy</strong> lost half a stone by giving up chocolate and walking at lunch. She cycles on her exercise bike at home while reading books, imagining herself in a glamorous dress for motivation. She aims for 20 minutes cycling daily but accepts ten minutes is better than nothing.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Mindset</span><span class="case-tag">Active Lifestyle</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="exercise active-lifestyle mindset">
+											<p><strong>Brian</strong> has two dogs and walks them for an hour every evening whatever the weather. At lunchtime he walks briskly around the hospital site where he works. He believes in healthy living as a whole package: regular physical activity, balanced diet, and time for leisure and family.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Active Lifestyle</span><span class="case-tag">Mindset</span></div>
+										</div>
+										<div class="case-study" data-tags="active-lifestyle exercise mindset">
+											<p><strong>Melvyn, aged 59</strong>, became a meter reader after being made redundant. Walking 8 miles a day for his job meant he lost 2.5 stones without trying, despite eating more. He swims once a week to keep his joints loose.</p>
+											<div class="case-tags"><span class="case-tag">Active Lifestyle</span><span class="case-tag">Exercise</span><span class="case-tag">Mindset</span></div>
+										</div>
+									</div>
+
+									<div class="category-section" data-category="maintaining">
+										<div class="category-title">Not Regaining Weight</div>
+										<div class="case-study" data-tags="exercise active-lifestyle mindset maintenance">
+											<p><strong>Phil</strong> is naturally slim. He believes 'the nation is getting increasingly obese without eating more calories - the difference is less exercise.' He cycles at lunchtime, enjoys long country hikes at weekends, and takes days off to walk with a rambling group.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Active Lifestyle</span><span class="case-tag">Mindset</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="exercise active-lifestyle maintenance mindset">
+											<p><strong>Sue</strong> carries bags of sugar equivalent to her excess weight to understand the burden. She cycles about 40 miles per week. She gauges weight by her tummy size - no scales in her house. She has never been on a diet.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Active Lifestyle</span><span class="case-tag">Weight Maintenance</span><span class="case-tag">Mindset</span></div>
+										</div>
+										<div class="case-study" data-tags="exercise mindset challenges maintenance">
+											<p><strong>Sarah (Runner)</strong> was over 16 stone in her thirties when she saw a 'slimmer of the year' on TV. She started running pretending she was running for a bus. She limits alcohol to one glass of wine per day.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Mindset</span><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="exercise diet mindset maintenance">
+											<p><strong>Neil</strong> is a retired teacher in his early sixties. He walks 20-60 miles/week and cycles 100 miles/week. He weighs himself weekly and limits food if weight increases.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Diet Control</span><span class="case-tag">Mindset</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="mindset diet exercise maintenance active-lifestyle">
+											<p><strong>Roy, aged 53</strong>, believes in rigid self-control. He is the same weight now as at 18. He exercises mainly at weekends and constantly fidgets rather than sitting still.</p>
+											<div class="case-tags"><span class="case-tag">Mindset</span><span class="case-tag">Diet Control</span><span class="case-tag">Exercise</span><span class="case-tag">Weight Maintenance</span><span class="case-tag">Active Lifestyle</span></div>
+										</div>
+										<div class="case-study" data-tags="active-lifestyle exercise mindset maintenance">
+											<p><strong>Pat</strong> is a single-parent journalist in her mid-thirties. She dances to music at home with her kids. She takes active options - running up stairs instead of escalators, walking to shops instead of driving.</p>
+											<div class="case-tags"><span class="case-tag">Active Lifestyle</span><span class="case-tag">Exercise</span><span class="case-tag">Mindset</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="mindset diet exercise maintenance">
+											<p><strong>Sarah (Horse Rider)</strong> was motivated to lose 1.5 stones to ride better. Colleagues give her fruit or vegetable alternatives instead of fattening snacks.</p>
+											<div class="case-tags"><span class="case-tag">Mindset</span><span class="case-tag">Diet Control</span><span class="case-tag">Exercise</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="diet mindset challenges">
+											<p><strong>Richard</strong> prefers controlling weight by eating less rather than exercising more. He gets bored by exercise.</p>
+											<div class="case-tags"><span class="case-tag">Diet Control</span><span class="case-tag">Mindset</span><span class="case-tag">Overcoming Challenges</span></div>
+										</div>
+										<div class="case-study" data-tags="diet active-lifestyle mindset maintenance">
+											<p><strong>Morgan, aged 20</strong>, uses an air fryer for healthy meals. She air fries potatoes, chicken, fish, and bananas as healthy crisps. This maintains her at 11 stones for her 5'8" frame.</p>
+											<div class="case-tags"><span class="case-tag">Diet Control</span><span class="case-tag">Active Lifestyle</span><span class="case-tag">Mindset</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="exercise challenges mindset diet maintenance">
+											<p><strong>Nigel</strong> is a hairdresser who walks his dog twice daily. He struggles with chocolate addiction. He keeps apples in his car to avoid buying chocolate at garages.</p>
+											<div class="case-tags"><span class="case-tag">Exercise</span><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Mindset</span><span class="case-tag">Diet Control</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="diet mindset challenges maintenance">
+											<p><strong>Joe, aged 45</strong>, has a psychological weight barrier of 100kg. When crossed, he went on a restricted diet: fruit for breakfast and lunch with a single evening dish. His message: 'Set an artificial barrier and don't cross it.'</p>
+											<div class="case-tags"><span class="case-tag">Diet Control</span><span class="case-tag">Mindset</span><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="diet mindset challenges">
+											<p><strong>Anna</strong> keeps low calorie food available. She nibbles on carrots when driving or working from home.</p>
+											<div class="case-tags"><span class="case-tag">Diet Control</span><span class="case-tag">Mindset</span><span class="case-tag">Overcoming Challenges</span></div>
+										</div>
+										<div class="case-study" data-tags="diet mindset challenges maintenance">
+											<p><strong>Max</strong> lost 3.5 stone over two years and kept it off. He takes water to fill up, eats fruit, eats breakfast, and cuts out a meal once a week to show he's in control.</p>
+											<div class="case-tags"><span class="case-tag">Diet Control</span><span class="case-tag">Mindset</span><span class="case-tag">Overcoming Challenges</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+										<div class="case-study" data-tags="diet mindset exercise maintenance">
+											<p><strong>Pete</strong> says 'It's not rocket science - either don't eat it or work it off.' His rule for 20+ years: no puddings ever, not even at Christmas. His message: 'If you don't buy it, you can't eat it.'</p>
+											<div class="case-tags"><span class="case-tag">Diet Control</span><span class="case-tag">Mindset</span><span class="case-tag">Exercise</span><span class="case-tag">Weight Maintenance</span></div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer-wrapper">
+			<footer id="footer" class="container">
+				<div class="row">
+					<div class="col-3 col-6-medium col-12-small">
+						<section class="widget links">
+							<h3>Policies</h3>
+							<ul class="style2">
+								<li><a href="#">Terms and Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="../data-ai.html">Use of your data & AI</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-3 col-6-medium col-12-small"></div>
+					<div class="col-3 col-6-medium col-12-small"></div>
+					<div class="col-3 col-6-medium col-12-small">
+						<section class="widget contact last">
+							<h3>Contact Us</h3>
+							<ul>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+							<p><br /><br /></p>
+						</section>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div id="copyright">
+							<ul class="menu">
+								<li>&copy; 2025. Weight Savers Limited. All rights reserved.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const filterBtns = document.querySelectorAll('.filter-btn');
+			const caseStudies = document.querySelectorAll('.case-study');
+			const categorySections = document.querySelectorAll('.category-section');
+			const caseCount = document.getElementById('caseCount');
+
+			function updateCount(visible) {
+				const total = caseStudies.length;
+				if (visible === total) {
+					caseCount.textContent = 'Showing all ' + total + ' case studies';
+				} else {
+					caseCount.textContent = 'Showing ' + visible + ' of ' + total + ' case studies';
+				}
+			}
+
+			function filterCases(filter) {
+				let visibleCount = 0;
+				caseStudies.forEach(function(study) {
+					const tags = study.getAttribute('data-tags');
+					if (filter === 'all' || tags.includes(filter)) {
+						study.classList.remove('hidden');
+						visibleCount++;
+					} else {
+						study.classList.add('hidden');
+					}
+				});
+				categorySections.forEach(function(section) {
+					const visibleStudies = section.querySelectorAll('.case-study:not(.hidden)');
+					section.style.display = visibleStudies.length === 0 ? 'none' : 'block';
+				});
+				updateCount(visibleCount);
+			}
+
+			filterBtns.forEach(function(btn) {
+				btn.addEventListener('click', function() {
+					filterBtns.forEach(function(b) { b.classList.remove('active'); });
+					this.classList.add('active');
+					filterCases(this.getAttribute('data-filter'));
+				});
+			});
+
+			updateCount(caseStudies.length);
+		});
+	</script>
+</body>
+</html>
